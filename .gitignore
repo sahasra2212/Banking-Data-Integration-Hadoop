@@ -1,0 +1,18 @@
+# Java compiled files
+*.class
+
+# Java JAR files
+*.jar
+
+# Compiled classes directories
+classes/
+
+# macOS files
+.DS_Store
+
+# Hadoop temporary/output files
+*.crc
+
+# IDE files
+.idea/
+.vscode/
