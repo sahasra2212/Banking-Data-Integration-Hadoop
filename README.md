@@ -81,7 +81,7 @@ map 100%
 reduce 0%
 ```
 ```text
-##Source Code:
+Source Code:
 ```
 ```text
 MapSideJoin/
@@ -91,7 +91,7 @@ MapSideJoin/
 # 2. Reduce-Side Join
 Join Performed
 
-``` text The customers.csv and accounts.csv datasets are joined using: ```
+```  The customers.csv and accounts.csv datasets are joined using: ```
 ```CustomerID``` 
 Reduce-Side Join Working
 
@@ -113,10 +113,12 @@ four joined output records for that CustomerID.
 ```text
 Source Code:
 ```
+```text
 ReduceSideJoin/
 ├── BankingJoin.java
 ├── BankingJoinMapper.java
 └── BankingJoinReducer.java
+```
 #3. Hadoop Components Used
 
 The implementation uses:
