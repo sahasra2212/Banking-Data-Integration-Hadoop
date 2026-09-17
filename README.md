@@ -69,8 +69,11 @@ Distributed Cache.
 The Mapper:
 
 1.Reads a transaction record.
+
 2.Extracts the BranchID.
+
 3.Looks up the corresponding branch information.
+
 4.Produces the joined output.
 
 No Reducer is required for this implementation.
@@ -104,8 +107,11 @@ together.
 The Reducer then:
 
 1.Separates customer and account records.
+
 2.Finds matching CustomerID values.
+
 3.Combines customer information with each corresponding account.
+
 4.Produces the joined records.
 
 For example, if one customer has four accounts, the Reducer can produce
@@ -119,20 +125,29 @@ ReduceSideJoin/
 ├── BankingJoinMapper.java
 └── BankingJoinReducer.java
 ```
-#3. Hadoop Components Used
+# 3. Hadoop Components Used
 
 The implementation uses:
 
 1.Hadoop HDFS
+
 2.Hadoop MapReduce
+
 3.NameNode
+
 4.DataNode
+
 5.ResourceManager
+
 6.NodeManager
+
 7.Mapper
+
 8.Reducer
+
 9.Distributed Cache
-#4. Project Structure
+
+# 4. Project Structure
 ```text
 Banking-Data-Integration-Hadoop/
 │
@@ -158,13 +173,14 @@ Banking-Data-Integration-Hadoop/
 ├── .gitignore
 └── README.md
 ```
-#5. Results
+# 5. Results
 Sample outputs produced by the Hadoop jobs are available in:
 Results/map-side-join-output.txt
+
 Results/reduce-side-join-output.txt
 The result files contain sample records from the actual Hadoop
 executions.
-6. Key Difference
+# 6. Key Difference
 | Feature                   | Map-Side Join                       | Reduce-Side Join                             |
 | ------------------------- | ----------------------------------- | -------------------------------------------- |
 | Join location             | Mapper                              | Reducer                                      |
@@ -173,7 +189,7 @@ executions.
 | Reducer required          | No                                  | Yes                                          |
 | Example                   | Transactions + Branches             | Customers + Accounts                         |
 
-Conclusion
+## Conclusion
 This project demonstrates two approaches for integrating related banking
 datasets using Hadoop MapReduce.
 
