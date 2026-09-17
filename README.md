@@ -60,6 +60,7 @@ The `transactions.csv` data is joined with the smaller
 
 ```text
 BranchID
+```
 Map-Side Join Working
 
 The smaller branches.csv dataset is loaded into the Mapper using
@@ -75,18 +76,23 @@ The Mapper:
 No Reducer is required for this implementation.
 
 The Hadoop execution completed with:
-
+```text
 map 100%
 reduce 0%
-Source Code:
+```
+```text
+##Source Code:
+```
+```text
 MapSideJoin/
 ├── BankingMapSideJoin.java
 └── BankingMapSideJoinMapper.java
-2. Reduce-Side Join
+```
+# 2. Reduce-Side Join
 Join Performed
 
-The customers.csv and accounts.csv datasets are joined using:
-CustomerID
+``` text The customers.csv and accounts.csv datasets are joined using: ```
+```CustomerID``` 
 Reduce-Side Join Working
 
 The Mapper identifies the source of each record and emits records using
@@ -104,12 +110,14 @@ The Reducer then:
 
 For example, if one customer has four accounts, the Reducer can produce
 four joined output records for that CustomerID.
+```text
 Source Code:
+```
 ReduceSideJoin/
 ├── BankingJoin.java
 ├── BankingJoinMapper.java
 └── BankingJoinReducer.java
-3. Hadoop Components Used
+#3. Hadoop Components Used
 
 The implementation uses:
 
@@ -122,7 +130,8 @@ The implementation uses:
 7.Mapper
 8.Reducer
 9.Distributed Cache
-4. Project Structure
+#4. Project Structure
+```text
 Banking-Data-Integration-Hadoop/
 │
 ├── MapSideJoin/
@@ -146,7 +155,8 @@ Banking-Data-Integration-Hadoop/
 ├── Report/
 ├── .gitignore
 └── README.md
-5. Results
+```
+#5. Results
 Sample outputs produced by the Hadoop jobs are available in:
 Results/map-side-join-output.txt
 Results/reduce-side-join-output.txt
