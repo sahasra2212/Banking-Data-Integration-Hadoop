@@ -167,9 +167,6 @@ Banking-Data-Integration-Hadoop/
 │   ├── map-side-join-output.txt
 │   └── reduce-side-join-output.txt
 │
-├── Screenshots/
-├── Presentation/
-├── Report/
 ├── .gitignore
 └── README.md
 ```
